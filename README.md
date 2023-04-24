@@ -27,9 +27,14 @@ python
 
 ## Create a python virtual env and install the dependencies by running:
 ```bash
- python3 -m venv .venv
-
- source .venv/bin/activate
-
- pip install -r requirements.txt
+ conda create -n myNewEnv python=3.9
 ```
+**
+To activate this environment, use
+#
+#     $ conda activate atariEnv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+**
