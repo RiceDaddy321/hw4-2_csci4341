@@ -29,7 +29,6 @@ python
 ```bash
  conda create -n myNewEnv python=3.9
 ```
-**
 To activate this environment, use
 #
 #     $ conda activate atariEnv
@@ -37,4 +36,4 @@ To activate this environment, use
 # To deactivate an active environment, use
 #
 #     $ conda deactivate
-**
+
