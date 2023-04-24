@@ -1,0 +1,6 @@
+# gymnasium[atari, all]
+# gymnasium[box2d]
+gym [atari,accept-rom-license]==0.21.0
+swig
+pygame
+ale_py
