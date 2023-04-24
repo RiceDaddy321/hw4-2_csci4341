@@ -152,8 +152,9 @@ def pre_processing(observe):
 if __name__ == "__main__":
     # making env and agent
     #env = gym.make('BreakoutDeterministic-v4')  # without rendering
+    #env = gym.make("ALE/VideoPinball-v5", render_mode='human') # with rendering
 
-    env = gym.make("ALE/VideoPinball-v5", render_mode='human') # with rendering
+    env = gym.make("ALE/VideoPinball-v5") # without rendering
 
     agent = DQNAgent(action_size=3)
 
