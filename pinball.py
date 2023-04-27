@@ -173,7 +173,7 @@ if __name__ == "__main__":
         done = False
         dead = False
 
-        step, score, start_life = 0, 0, 5
+        step, score, start_life = 0, 0, 2
         # env initialization
         observe = env.reset()
 

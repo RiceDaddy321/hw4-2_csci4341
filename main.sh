@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### Sets the job's name.
-#SBATCH --job-name=hw4_2
+#SBATCH --job-name=hw4_1
 
 ### Sets the job's output file and path.
 #SBATCH --output=result.out.%j
@@ -24,15 +24,15 @@
 echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 
 echo "Activating Atari Environment"
-conda activate atariEnv
-
-pip install -r requirements.txt
-
+source ~/Documents/myEnvs/atariEnv/bin/activate
+#source ~/Documents/myEnvs/atariEnv/bin/activate 
+#~/Documents/myEnvs/atariEnv/bin/activate
+#hw4-1_csci4341/breakout.py
 echo "Running testTF.py"
-python ~/hw4-2_csci4341/pinball.py
+python3 ~/Documents/hw4-2_csci4341/pinball.py
 
 echo "Deactivating Atari environment"
-conda deactivate
+deactivate
 
 echo "Done."
 
