@@ -45,6 +45,7 @@ class DQNAgent:
         self.action_size = action_size
 
         # Hyper-parameters
+        # Erik was here
         self.discount_factor = 0.99
         self.learning_rate = 1e-4
         self.epsilon = 1.
